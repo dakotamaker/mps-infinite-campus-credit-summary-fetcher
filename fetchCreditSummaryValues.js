@@ -65,6 +65,6 @@ const getCredits = () => {
          }
      })
  
-     console.log(result)
+     console.table(result)
  }
  
