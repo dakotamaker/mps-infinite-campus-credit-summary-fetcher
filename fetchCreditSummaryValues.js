@@ -18,8 +18,8 @@ const getCredits = () => {
          "07 - Fine Arts": 0,
          "08 - Electives": 0,
          "09 - Service Learning": 0,
-         "10 - Career Readiness": 0,
-         "11 - World Language": 0
+         "10 - World Language": 0,
+         "11 - Career Readiness": 0
      }
  
      const tableValueArrays = Array.from(workspaceDetailDocument .querySelectorAll('.detailFormColumn')).map(node => node.parentElement.textContent.replace(/ /g,'').split('\n'))
@@ -29,39 +29,39 @@ const getCredits = () => {
          const creditValue = tableValueArray[tableValueArray.length - 2]
  
          switch(className) {
-             case "ENGLISH":
+            case "ENGLISH":
                  result["01 - English"] = creditValue
                  break
-             case "MATH":
+            case "MATH":
                  result["02 - Math"] = creditValue
                  break
-             case "SCIENCE":
+            case "SCIENCE":
                  result["03 - Science"] = creditValue
                  break
-             case "SOCIALSTUDIES":
+            case "SOCIALSTUDIES":
                  result["04 - Social Studies"] = creditValue
                  break
-             case "HEALTH":
+            case "HEALTH":
                  result["05 - Health"] = creditValue
                  break
-             case "PHYSICALEDUCATION":
+            case "PHYSICALEDUCATION":
                  result["06 - Phy Ed"] = creditValue
                  break
-             case "FINEARTS":
+            case "FINEARTS":
                  result["07 - Fine Arts"] = creditValue
                  break
-             case "OTHERELECTIVE":
+            case "OTHERELECTIVE":
                  result["08 - Electives"] = creditValue
                  break
-              case "SERVICE/ONLINE/COMMSERV":
+            case "SERVICE/ONLINE/COMMSERV":
                  result["09 - Service Learning"] = creditValue
                  break
-              case "COLLEGEANDCAREERREADINESS":
-                 result["10 - Career Readiness"] = creditValue
-                 break
-             case "FOREIGNLANGUAGE":
-                 result["11 - World Language"] = creditValue
-                 break        
+            case "FOREIGNLANGUAGE":
+                 result["10 - World Language"] = creditValue
+                 break   
+            case "COLLEGEANDCAREERREADINESS":
+                result["11 - Career Readiness"] = creditValue
+                break     
          }
      })
  
