@@ -65,7 +65,7 @@ const getCredits = () => {
           case "SERVICE/ONLINE/COMM SERV".replace(whitespaceRegex,''):
                result["09 - Service Learning"] = creditValue
                break
-          case "FOREIGN LANGUAGE":
+          case "FOREIGN LANGUAGE".replace(whitespaceRegex,''):
                result["10 - World Language"] = creditValue
                break   
           case "COLLEGE AND CAREER READINESS".replace(whitespaceRegex,''):
