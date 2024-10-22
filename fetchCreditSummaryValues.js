@@ -33,7 +33,7 @@ const getCredits = () => {
  
      tableValueArrays.forEach(tableValueArray => {
          const className = tableValueArray[1]
-         const creditValue = tableValueArray[tableValueArray.length - 2]
+         const creditValue = parseFloat(tableValueArray[tableValueArray.length - 2])
  
          switch(className) {
             case "ENGLISH":
